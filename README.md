@@ -43,7 +43,7 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - vault operator generate-root -decode=<ENCODED_TOKEN> -otp=<OTP>
 - vault login <TOKEN>
 
-## DISASTER RECOVERY SETUP
+# DISASTER RECOVERY SETUP
 From primary:
 - vault write -f sys/replication/dr/primary/enable
 - vault write sys/replication/dr/primary/secondary-token id=<ANY_NAME>
@@ -52,7 +52,7 @@ From DR secondary:
 - vault write sys/replication/dr/secondary/enable token=<TOKEN_FROM_A>
 
 
-## NOTES ON STANDBY NODES
+# NOTES ON STANDBY NODES
 - Three nodes per Cluster
 - The above doesn't cover the standy nodes, but they can each be accessed via SSH
     - sudo systemctl restart vault
