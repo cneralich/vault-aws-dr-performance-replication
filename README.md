@@ -36,11 +36,11 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - consul license put "<CONSUL_ENTERPRISE_LICENSE>
 
 ## SETUP SECONDARY
-- vault write sys/replication/performance/secondary/enable token=<TOKEN_FROM_K_ABOVE>
+- vault write sys/replication/performance/secondary/enable token=<TOKEN_FROM_PRIMARY>
 - vault operator generate-root -init
 - vault operator generate-root 
 - Enter <RECOVERY_KEY_FROM_PRIMARY>
-- vault operator generate-root -decode=<ENCODED_TOKEN> -otp=<OTP>
+- vault operator generate-root -decode=<ENCODED_TOKEN> -otp=<GENERATED_PASSWORD>
 - vault login <TOKEN>
 
 # DISASTER RECOVERY SETUP
@@ -49,7 +49,7 @@ From primary:
 - vault write sys/replication/dr/primary/secondary-token id=<ANY_NAME>
 
 From DR secondary:
-- vault write sys/replication/dr/secondary/enable token=<TOKEN_FROM_A>
+- vault write sys/replication/dr/secondary/enable token=<TOKEN_FROM_PRIMARY>
 
 
 # ADDITIONAL NOTES
