@@ -1,6 +1,6 @@
 # VAULT DISASTER RECOVERY AND PERFORMANCE REPLICATION DEMO (AWS)
 
-The goal of this demo is to allow easy setup of Vault Primary, DR, and Performanc Replication clusters.
+The goal of this demo is to allow easy setup of Vault Primary, DR, and Performance Replication clusters.
 
 
 
