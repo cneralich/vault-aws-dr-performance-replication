@@ -11,8 +11,8 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - Must have an Enterprise license for Vault and Consul
 
 - Must set AWS Access Credentials as env variables:
-export AWS_SECRET_ACCESS_KEY="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
-export AWS_ACCESS_KEY_ID="bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
+    - export AWS_SECRET_ACCESS_KEY="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
+    - export AWS_ACCESS_KEY_ID="bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
 
 ## FROM THE ROOT FOLDER:
 - terraform init/plan/apply
