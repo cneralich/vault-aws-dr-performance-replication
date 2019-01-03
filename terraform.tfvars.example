@@ -1,0 +1,4 @@
+vault_zip = "NAME_OF_VAULT_FILE.zip"
+vault_url = "path/to/vault_enterprize_binary.zip"
+consul_zip = "NAME_OF_CONSUL_FILE.zip"
+consul_url = "path/to/consul_enterprize_binary.zip"
