@@ -18,7 +18,7 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - terraform init/plan/apply
 
 ## SSH INTO VAULT PRIMARY:
-- ssh into the primary box (ex. ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>
+- ssh into the primary box (ex. ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>).  This will be available as an output.
 - vault operator init -stored-shares=1 -recovery-shares=1 -recovery-threshold=1 -key-shares=1 -key-threshold=1
 - sudo systemctl restart vault
 - vault login <ROOT_TOKEN>
@@ -28,7 +28,7 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - vault write sys/replication/performance/primary/secondary-token id=<ANY_NAME>
 
 ## SSH INTO VAULT PERFORMANCE SECONDARY
-- ssh into box (ex. ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>
+- ssh into box (ex. ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>).  This will be available as an output.
 - vault operator init -stored-shares=1 -recovery-shares=1 -recovery-threshold=1 -key-shares=1 -key-threshold=1
 - sudo systemctl restart vault
 - vault login <ROOT_TOKEN>
