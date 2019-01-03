@@ -52,8 +52,14 @@ From DR secondary:
 - vault write sys/replication/dr/secondary/enable token=<TOKEN_FROM_A>
 
 
-# NOTES ON STANDBY NODES
-- Three nodes per Cluster
-- The above doesn't cover the standy nodes, but they can each be accessed via SSH
+# ADDITIONAL NOTES
+## STANDBY NODES
+- There are three nodes per Cluster created by default
+- The above steps don't cover the standy nodes, but they can each be accessed via SSH
+    - ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>). The list of Public IPs for each cluster will be avialable as an ouput.
     - sudo systemctl restart vault
     - vault login <TOKEN>
+
+## UI ACCESS
+- The UI for each cluster can be accessed by visiting the respective links included in the initial output.
+- Use this to show primary/secondary 'enabled' status.
