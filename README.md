@@ -2,10 +2,6 @@
 
 The goal of this demo is to allow easy setup of Vault Primary, DR, and Performance Replication clusters.
 
-
-
-# PERFORMANCE REPLICATION SETUP
-
 ## PREREQUISITES AND FIRST STEPS
 - Must have access to Vault and Consul Enterprise Binaries
 - Must have an Enterprise license for Vault and Consul
@@ -13,6 +9,8 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - Must set AWS Access Credentials as env variables:
     - export AWS_SECRET_ACCESS_KEY="aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"
     - export AWS_ACCESS_KEY_ID="bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
+
+# PERFORMANCE REPLICATION SETUP
 
 ## FROM THE ROOT FOLDER:
 - terraform init/plan/apply
