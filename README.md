@@ -58,7 +58,7 @@ From DR secondary:
 - The above steps don't cover the standy nodes, but they can each be accessed via SSH
     - ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>). The list of Public IPs for each cluster will be avialable as an ouput.
     - sudo systemctl restart vault
-    - vault login <TOKEN>
+    - vault login <PRIMARY_ROOT_TOKEN>
 
 ## UI ACCESS
 - The UI for each cluster can be accessed by visiting the respective links included in the initial output.
