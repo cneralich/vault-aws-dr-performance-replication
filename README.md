@@ -21,7 +21,7 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - sudo systemctl restart vault
 - vault login <ROOT_TOKEN>
 - vault write sys/license text=<VAULT_ENTERPRISE_LICENSE>
-- consul license put "<CONSUL_ENTERPRISE_LICENSE>
+- consul license put "<CONSUL_ENTERPRISE_LICENSE>"
 - vault write -f sys/replication/performance/primary/enable
 - vault write sys/replication/performance/primary/secondary-token id=<ANY_NAME>
 
@@ -31,7 +31,7 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - sudo systemctl restart vault
 - vault login <ROOT_TOKEN>
 - vault write sys/license text=<VAULT_ENTERPRISE_LICENSE>
-- consul license put "<CONSUL_ENTERPRISE_LICENSE>
+- consul license put "<CONSUL_ENTERPRISE_LICENSE>"
 
 ## SETUP SECONDARY:
 - vault write sys/replication/performance/secondary/enable token=<TOKEN_FROM_PRIMARY>
