@@ -39,7 +39,7 @@ The goal of this demo is to allow easy setup of Vault Primary, DR, and Performan
 - vault operator generate-root 
 - Enter <RECOVERY_KEY_FROM_PRIMARY>
 - vault operator generate-root -decode=<ENCODED_TOKEN> -otp=<GENERATED_PASSWORD>
-- vault login <TOKEN>
+- vault login <NEW_TOKEN>
 
 # DISASTER RECOVERY SETUP
 From primary:
