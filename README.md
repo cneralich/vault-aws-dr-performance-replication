@@ -54,7 +54,7 @@ From DR secondary:
 ## STANDBY NODES:
 - There are three nodes per Cluster created by default.
 - The above steps don't cover the standy nodes, but they can each be accessed via SSH.
-    - ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>). The list of Public IPs for each cluster will be avialable as an ouput.
+    - ssh into each (ssh -i <PATH_TO_KEY> ubuntu@<PUBLIC_IP>). The list of Public IPs for each cluster will be avialable as an ouput.
     - sudo systemctl restart vault
     - vault login <PRIMARY_ROOT_TOKEN>
 
