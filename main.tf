@@ -53,6 +53,7 @@ module "vault_primary" {
   vault_user_data  = "${data.template_file.vault_primary.rendered}"
   consul_user_data = "${data.template_file.consul_primary.rendered}"
 }
+
 module "vault_dr_secondary" {
   source = "./modules"
 
