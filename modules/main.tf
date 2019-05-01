@@ -23,7 +23,6 @@ resource "aws_instance" "vault" {
   tags {
     Name     = "${var.name}-vault-server-${count.index}"
     ConsulDC = "${var.name}-replication-testing"
-    owner = "corrigan"
   }
 
   # Trying to prevent destruction of current machines due to changing value for AMI
@@ -51,7 +50,6 @@ resource "aws_instance" "consul" {
   tags {
     Name     = "${var.name}-consul-server-${count.index}"
     ConsulDC = "${var.name}-replication-testing"
-    owner = "corrigan"
   }
 
     # Trying to prevent destruction of current machines due to changing value for AMI

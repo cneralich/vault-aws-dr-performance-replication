@@ -39,8 +39,8 @@ module "ssh_key" {
 module "vault_primary" {
   source = "./modules"
 
-  vault_node_count = 1
-  consul_node_count = 1
+  vault_node_count = "${var.primary_vault_nodes}"
+  consul_node_count = "${var.primary_consul_nodes}"
 
   name          = "${var.vault_primary_name}"
   instance_type = "${var.instance_type}"
@@ -57,8 +57,8 @@ module "vault_primary" {
 module "vault_dr_secondary" {
   source = "./modules"
 
-  vault_node_count = 1
-  consul_node_count = 1
+  vault_node_count = "${var.dr_secondary_vault_nodes}"
+  consul_node_count = "${var.dr_secondary_consul_nodes}"
 
   name          = "${var.vault_dr_secondary_name}"
   instance_type = "${var.instance_type}"
@@ -74,8 +74,8 @@ module "vault_dr_secondary" {
 module "vault_performance_secondary" {
   source = "./modules"
 
-  vault_node_count = 1
-  consul_node_count = 1
+  vault_node_count = "${var.performance_secondary_vault_nodes}"
+  consul_node_count = "${var.performancee_secondary_consul_nodes}"
 
   name          = "${var.vault_performance_secondary_name}"
   instance_type = "${var.instance_type}"
