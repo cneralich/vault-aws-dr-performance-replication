@@ -46,7 +46,7 @@ To Access your Vault nodes:
 1.) PRIMARY NODES:
   $ ssh -i private-key.pem ubuntu@${module.vault_primary.vault-public-ip[0]}
 2.) SECONDARY NODES - DISASTER RECOVERY
-  $ ssh -i private-key.pem ubuntu@${module.vault_dr_secondary.vault-public-ip[0]}
+  $ ssh -i private-key.pem ubuntu@${module.vault_dr_secondary.vault-public-ip[0]}  
 3.) SECONDARY NODES - PERFORMANCE REPLICATION
   $ ssh -i private-key.pem ubuntu@${module.vault_performance_secondary.vault-public-ip[0]}
 }

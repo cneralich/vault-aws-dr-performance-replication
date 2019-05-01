@@ -7,3 +7,7 @@ variable "public_key" {}
 variable "subnet_id" {}
 
 variable "vpc_id" {}
+
+variable "vault_node_count" {}
+
+variable "consul_node_count" {}
