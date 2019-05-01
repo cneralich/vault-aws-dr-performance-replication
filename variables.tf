@@ -38,6 +38,30 @@ variable "vault_performance_secondary_name" {
   default = "vault-performance-secondary"
 }
 
+variable "primary_vault_nodes" {
+  default = 1
+}
+
+variable "primary_consul_nodes" {
+  default = 1
+}
+
+variable "dr_secondary_vault_nodes" {
+  default = 1
+}
+
+variable "dr_secondary_consul_nodes" {
+  default = 1
+}
+
+variable "performance_secondary_vault_nodes" {
+  default = 1
+}
+
+variable "performancee_secondary_consul_nodes" {
+  default = 1
+}
+
 variable "vault_zip" {}
 
 variable "vault_url" {}
