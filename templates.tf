@@ -16,7 +16,7 @@ data "template_file" "vault_primary" {
   }
 }
 
-/*data "template_file" "vault_dr_secondary" {
+data "template_file" "vault_dr_secondary" {
   template = "${file("${path.module}/templates/userdata-vault.tpl")}"
 
   vars = {
@@ -28,7 +28,7 @@ data "template_file" "vault_primary" {
     tpl_consul_zip = "${var.consul_zip}"
     tpl_consul_url = "${var.consul_url}"
   }
-}*/
+}
 
 data "template_file" "vault_performance_secondary" {
   template = "${file("${path.module}/templates/userdata-vault.tpl")}"
